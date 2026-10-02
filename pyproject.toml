@@ -1,0 +1,46 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "anthropic-radar"
+version = "0.1.0"
+description = "Anthropic infrastructure FinOps SDK — part of the Hyperscaler Radar suite."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Mor Michaeli" }]
+keywords = ["cloud-cost", "finops", "hyperscaler", "llm", "anthropic", "claude", "radar"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: System Administrators",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Monitoring",
+]
+dependencies = [
+  "pydantic>=2.0",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+csv = []
+drawio = []
+all = []
+
+[project.scripts]
+anthropic-radar = "anthropic_radar.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/gomorsmi/anthropic-radar"
+Repository = "https://github.com/gomorsmi/anthropic-radar"
+"Bug Tracker" = "https://github.com/gomorsmi/anthropic-radar/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/anthropic_radar"]
