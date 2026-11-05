@@ -1,5 +1,4 @@
 """Per-resource CSV export."""
-"""TEST Per-resource CSV export."""
 from __future__ import annotations
 
 import csv
