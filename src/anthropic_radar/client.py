@@ -1,4 +1,5 @@
 """RadarClient: auth and low-level HTTP for the Anthropic Admin API."""
+"""RadarClient: Updates/models info will be shared on Radars daily"""
 from __future__ import annotations
 
 import os
