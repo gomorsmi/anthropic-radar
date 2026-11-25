@@ -136,7 +136,7 @@ src/anthropic_radar/
 
 ## Part of the Hyperscaler Radar suite
 
-`aws-radar` · `gcp-radar` · `azure-radar` · `oci-radar` · `openai-radar` · `gemini-radar` · `datadog-radar` · `coreweave-radar` · `anthropic-radar`
+`aws-radar` · `gcp-radar` · `azure-radar` · `oci-radar` · `openai-radar` · `gemini-radar` · `datadog-radar` · `anthropic-radar`
 
 ## License
 
